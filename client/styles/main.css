@@ -1,0 +1,51 @@
+#searchBar {
+  margin: 15px 10px;
+}
+
+.tableWrapper {
+  max-height: 400px;
+  overflow: auto;
+}
+#searchBar {
+  margin: 15px 10px;
+}
+
+.tableWrapper {
+  max-height: 400px;
+  overflow: auto;
+}
+.jumbotron span {
+    color: orange;
+}
+.row span {
+    color: #1e5496;
+}
+.row h1 {
+    color: #b05d2c;
+}
+.jumbotron {
+    background-color:orange; 
+    color: white;
+}
+.tableWrapper th{
+    background-color: #1e5496;
+    color: white;
+    
+}
+h2 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    color: #1e5496;
+}
+.moreinfo {
+    margin-top: 20px;
+    background-color: orange;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+label {
+    color:white;
+}
