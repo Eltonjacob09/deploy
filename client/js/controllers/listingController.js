@@ -17,13 +17,15 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
 
     $scope.deleteListing = function(index) {
       var ind = $scope.listings[index];
+        console.log(index);
       
-        //Listings.delete(index);
-      Listings.delete({id:ind.id}).then(function(response) {
+       /* //Listings.delete(index);
+      Listings.delete(inde).then(function(response) {
         }, function(error) {
         $scope.listings.splice(index,1);
         console.log('Could not delete:', error);
         });
+        */
     };
 
     $scope.showDetails = function(index) {
