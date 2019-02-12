@@ -17,7 +17,7 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
 
     $scope.deleteListing = function(index) {
       var ind = $scope.listings[index];
-        console.log(index);
+        console.log(ind);
       
        /* //Listings.delete(index);
       Listings.delete(inde).then(function(response) {
