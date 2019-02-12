@@ -10,23 +10,20 @@ angular.module('listings').controller('ListingsController', ['$scope', 'Listings
     $scope.detailedInfo = undefined;
 
     $scope.addListing = function() {
-        $scope.listings.push($scope.newListing);
-        Listings.create($scope.newListing);
-        $scope.newListing = {};
+    $scope.listings.push($scope.newListing);
+    Listings.create($scope.newListing);
+    $scope.newListing = {};
     };
 
     $scope.deleteListing = function(index) {
-      var ind = $scope.listings[index];
-        console.log(ind);
-      
-       /* //Listings.delete(index);
-      Listings.delete(inde).then(function(response) {
-        }, function(error) {
-        $scope.listings.splice(index,1);
-        console.log('Could not delete:', error);
-        });
-        */
+      //var indexOf = $scope.listings.indexOf(index);
+      $scope.listings.splice(indexOf,1);
+      Listings.delete(index).then(function(response) {
+    }, function(error) {
+      console.log('Could not delete:', error);
+    });
     };
+      
 
     $scope.showDetails = function(index) {
       $scope.detailedInfo = $scope.listings[index];
